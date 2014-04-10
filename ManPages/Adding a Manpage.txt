@@ -1,0 +1,17 @@
+Daniel Puckowski
+Microcomputer/DamOS Project
+03/27/2014
+
+How to add a manpage to the system (assuming your manpage text file is located in ~/Desktop):
+
+cd /usr/share/man/man1
+sudo cp ~/Desktop/mymanpage mymanpage.1
+sudo chmod 0644 mymanpage.1
+man mymanpage
+
+Note: replace "mymanpage" with the name of the text file that will be your manpage.
+Follow the ".1" convention as directed by the commands above. Otherwise, the manpage will not
+properly register with the man command.
+
+If man is not able to find the manpage you added to /usr/share/man/man1, you may need to
+add that directory to the man search path. You may do so in this file: /etc/man.config

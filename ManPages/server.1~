@@ -1,0 +1,40 @@
+.\" Manpage for DamOS Server Program.
+.\" Contact puckowski.d@gmail.com to correct errors or typos.
+
+.TH man 8 "05 April 2014" "1.3" "DamOS Server Program man page"
+
+.SH NAME
+DamOS Server Program \- This program is a command-and-control server. It may be used
+to communicate and interact with clients that are running the DamOS Client Program. 
+
+.SH SYNOPSIS
+The usage for the DamOS Server Program is as follows:
+
+./server 5560
+
+Simply supply a port to bind to, and the program will use the IP address of your system.
+
+.SH DESCRIPTION
+DamOS Server 
+
+The DamOS Server may collect and store data sent to it my systems running the DamOS Client program.
+
+An administrator may also define new tasks for Clients to work on. Lastly, the Server may send
+local executable (binary) files to Clients.
+
+.SH OPTIONS
+
+None.
+
+.SH SEE ALSO
+
+DamOS Client Program.
+
+.SH BUGS
+
+
+No known bugs.
+
+.SH AUTHOR
+
+Daniel Puckowski (puckowski.d@gmail.com)

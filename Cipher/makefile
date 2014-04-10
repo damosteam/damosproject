@@ -1,0 +1,48 @@
+CC = g++
+CFLAGS = -Wall -g -O3
+LDFLAGS = -lm
+
+loe: linkedList.o command.o terminal.o file.o cipher.o encryption.o decryption.o xor.o tea.o xtea.o xxtea.o functions.o main.o
+	${CC} ${CFLAGS} linkedList.o command.o terminal.o file.o cipher.o encryption.o decryption.o xor.o tea.o xtea.o xxtea.o functions.o main.o ${LDFLAGS} -o loe
+
+main.o: header.h 
+	${CC} ${CFLAGS} -c main.cpp
+
+linkedList.o: linkedList.h
+	${CC} ${CFLAGS} -c linkedList.cpp
+
+command.o: command.h
+	$(CC) ${CFLAGS} -c command.cpp
+
+terminal.o: header.h
+	${CC} ${CFLAGS} -c terminal.cpp
+
+file.o: header.h linkedList.cpp
+	${CC} ${CFLAGS} -c file.cpp
+
+cipher.o: cipher.h
+	${CC} ${CFLAGS} -c cipher.cpp
+
+encryption.o: encryption.h
+	${CC} ${CFLAGS} -c encryption.cpp
+
+decryption.o: decryption.h
+	${CC} ${CFLAGS} -c decryption.cpp
+
+xor.o: xor.h
+	${CC} ${CFLAGS} -c xor.cpp
+
+tea.o: tea.h
+	${CC} ${CFLAGS} -c tea.cpp
+
+xtea.o: xtea.h
+	${CC} ${CFLAGS} -c xtea.cpp
+
+xxtea.o: xxtea.h
+	${CC} ${CFLAGS} -c xxtea.cpp
+
+functions.o: header.h terminal.cpp linkedList.cpp
+	${CC} ${CFLAGS} -c functions.cpp
+
+clean:
+	rm -f *.o loe

@@ -1,0 +1,28 @@
+.\" Manpage for PROGRAM/UTILITY/SCRIPT.
+.\" Contact puckowski.d@gmail.com to correct errors or typos.
+
+.TH man 8 "27 March 2014" "1.0" "PROGRAM/UTILITY/SCRIPT man page"
+
+.SH NAME
+PROGRAM/UTILITY/SCRIPT \- [Short explanation here of what this is.]
+
+.SH SYNOPSIS
+PROGRAM/UTILITY/SCRIPT [How to use this thing. Write a command (or a couple of them)
+			showing what the general usage of this thing might look like.]
+
+.SH DESCRIPTION
+PROGRAM/UTILITY/SCRIPT [Describe the purpose of this thing. What does it do?]
+
+.SH OPTIONS
+[List all of the options, if there are any, that may be given as input. Such as:
+-v	This option will enable verbose output mode.]
+
+.SH SEE ALSO
+[List other useful commands, scripts, utilities, or programs that may be used in 
+conjunction with this thing (or as a possible alternative to this thing).]
+
+.SH BUGS
+[State if there are any known bugs and provide a short description of them here.]
+
+.SH AUTHOR
+Author of PROGRAM/UTILITY/SCRIPT (author@gmail.com)
