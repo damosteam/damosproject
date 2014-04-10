@@ -3,9 +3,15 @@
 # Author: Daniel Puckowski
 # Purpose: This script will automatically build the custom DamOS programs and utilities.
 
+## Color map for script text.
+txtblk='\e[0;30m' # Black - Regular
+txtred='\e[0;31m' # Red
+
 OS_NAME='DamOS'
 
-echo "Building custom utilities/programs for ${OS_NAME}..."
+echo -e "${txtred}Building custom utilities/programs for ${OS_NAME}..." ; tput sgr0
+
+echo
 
 startTime=$(date +"%T")
 
@@ -23,49 +29,49 @@ echo 'Extracting source code from archive...'
 ./extract.sh
 echo 'Done extracting source code.'
 
-echo 'Building cipher program now...'
+echo 'Building Cipher program now...'
 cd ./Cipher
 echo $(pwd)
 make
-echo 'Done building cipher program.'
+echo 'Done building Cipher program.'
 cd ..
 
-echo 'Building server program now...'
+echo 'Building Server program now...'
 cd ./Server
 echo $(pwd)
 make
-echo 'Done building server program.'
+echo 'Done building Server program.'
 cd ..
 
-echo 'Building client program now...'
+echo 'Building Client program now...'
 cd ./Client
 echo $(pwd)
 make
-echo 'Done building client program.'
+echo 'Done building Client program.'
 cd ..
 
-echo 'Building keylogger program now...'
+echo 'Building Key Logger program now...'
 cd ./KeystrokeLogging/LinuxLogging/KeyLogger
 echo $(pwd)
 make
-echo 'Done building keylogger program.'
+echo 'Done building Key Logger program.'
 cd .. ; cd .. ; cd ..
 
-echo 'Building log-processor utility now...'
+echo 'Building Log Processor utility now...'
 cd ./KeystrokeLogging/LinuxLogging/LogProcessor
 echo $(pwd)
 make
-echo 'Done building log-processor utility.'
+echo 'Done building Log Processor utility.'
 cd .. ; cd .. ; cd ..
 
-echo 'Building menu reader utility now...'
+echo 'Building Menu Reader utility now...'
 cd ./MenuReader
 echo $(pwd)
 make
-echo 'Done building menu reader utility.'
+echo 'Done building Menu Reader utility.'
 cd ..
 
-echo "Done building custom utilities/programs for ${OS_NAME}."
+echo -e "${txtred}Done building custom utilities/programs for ${OS_NAME}." ; tput sgr0
 
 echo "Time started:  ${startTime}."
 echo "Time finished: $(date +"%T")."

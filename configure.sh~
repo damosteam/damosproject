@@ -44,7 +44,7 @@ cd ..
 
 echo
 
-echo -e "${txtred}Done configuring DamOS programs and utilities." ; tput sgr0
+echo -e "${txtred}Done configuring the custom DamOS programs and utilities." ; tput sgr0
 
 echo "Time started:  ${startTime}."
 echo "Time finished: $(date +"%T")."

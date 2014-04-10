@@ -3,9 +3,15 @@
 # Author: Daniel Puckowski
 # Purpose: Build the custom DamOS programs using make and g++.
 
+## Color map for script text.
+txtblk='\e[0;30m' # Black - Regular
+txtred='\e[0;31m' # Red
+
 OS_NAME='DamOS'
 
-echo "Building custom utilities/programs for ${OS_NAME}..."
+echo -e "${txtred}Building custom utilities/programs for ${OS_NAME}..." ; tput sgr0
+
+echo
 
 startTime=$(date +"%T")
 
