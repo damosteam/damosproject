@@ -17,7 +17,7 @@ echo
 
 echo -e "\n" >> ~/.bashrc
 
-echo "export PATH=$PATH:/damos-programs/Cipher/:/damos-programs/Client/:/damos-programs/Server/:/damos-programs/KeystrokeLogging/LinuxLogging/KeyLogger/:/damos-programs/KeystrokeLogging/LinuxLogging/LogProcessor/:/damos-programs/MenuReader/" >> ~/.bashrc
+echo "export PATH=$PATH:/damos-programs/Cipher/:/damos-programs/Client/:/damos-programs/Server/:/damos-programs/KeyLogger/:/damos-programs/LogProcessor/:/damos-programs/MenuReader/" >> ~/.bashrc
 
 echo
 
