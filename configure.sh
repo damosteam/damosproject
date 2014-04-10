@@ -13,22 +13,24 @@ echo -e "${txtred}Configuring the custom DamOS programs and utilities now..." ; 
 
 echo 
 
-echo -e "${txtred}Please make sure the folder containing this script and the rest of the custom DamOS programs, utilities, and scripts is named \"damos-programs\" and is located at /damos-programs before proceeding..." ; tput sgr0
+# echo -e "${txtred}Please make sure the folder containing this script and the rest of the custom DamOS programs, utilities, and scripts is named \"damos-programs\" and is located at /damos-programs before proceeding..." ; tput sgr0
+
+# echo
+
+# read -p 'Stop now to make appropriate changes? ' -n 1 -r
+# if [[ $REPLY =~ ^[Yy]$ ]]
+# then
+#     echo
+#     exit 0
+# fi
+
+# echo
+
+echo 'This script will: install all of the required dependencies, compile the custom DamOS programs and utilites, add man pages for the DamOS software, and add the programs and utilities to the PATH environment variable for all users for quick access.'
 
 echo
 
-read -p 'Stop now to make appropriate changes? ' -n 1 -r
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-    echo
-    exit 0
-fi
-
-echo
-
-echo 'This script will: install all of the required dependencies, compile the DamOS programs and utilites, add man pages for the DamOS software, and add the programs and utilities to the PATH environment variable for all users for quick access.'
-
-echo
+cd /damos-programs
 
 ./install-dependencies.sh
 

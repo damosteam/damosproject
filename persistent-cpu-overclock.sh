@@ -10,11 +10,11 @@
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red
 
-echo -e "${txtred}Enabling persistent CPU overclock..." ; tput sgr0
+echo -e "${txtred}Enabling persistent CPU overclock now..." ; tput sgr0
 
 if [ ! -f /etc/rc.local ]; then
 	touch /etc/rc.local
-	echo "Created /etc/rc.local file."
+	echo "Created file /etc/rc.local"
 fi
 
 ## Uncomment the next line to create a backup of the /etc/rc.local file when this script is run.

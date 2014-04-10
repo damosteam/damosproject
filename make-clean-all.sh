@@ -11,6 +11,8 @@ echo -e "${txtred}Running \"make clean\" in all build directories now..." ; tput
 
 echo
 
+cd /damos-programs
+
 cd ./Cipher
 make clean
 cd ..
@@ -39,5 +41,5 @@ echo
 
 echo -e "${txtred}Done cleaning all build directories." ; tput sgr0
 
-exit 0;
+exit 0
 

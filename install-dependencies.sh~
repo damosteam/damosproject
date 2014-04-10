@@ -68,7 +68,7 @@ sudo apt-get install acpi
 ## Shred can be used to securely delete files and devices.
 sudo apt-get install coreutils
 
-echo 'Suggested optional packages: gedit, tmux, lynx, vim'
+echo 'Suggested optional packages: tmux, lynx, vim'
 
 echo
 

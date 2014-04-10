@@ -15,6 +15,6 @@ tar -zxvf archive.tar.gz
 
 echo
 
-echo -e "$txtred}Done." ; tput sgr0
+echo -e "${txtred}Done." ; tput sgr0
 
 exit 0

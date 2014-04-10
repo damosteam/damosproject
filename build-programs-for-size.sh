@@ -9,11 +9,13 @@ txtred='\e[0;31m' # Red
 
 OS_NAME='DamOS'
 
-echo -e "${txtred}Building custom utilities/programs for ${OS_NAME}..." ; tput sgr0
+echo -e "${txtred}Building custom utilities/programs for ${OS_NAME} now..." ; tput sgr0
 
 echo
 
 startTime=$(date +"%T")
+
+cd /damos-programs
 
 echo 'Building Cipher program now...'
 cd ./Cipher

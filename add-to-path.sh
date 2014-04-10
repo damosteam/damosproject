@@ -7,13 +7,13 @@
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red
 
-echo -e "${txtred}Adding the custom DamOS programs and utilites to PATH in the ~/.bashrc file..." ; tput sgr0
+echo -e "${txtred}Adding the custom DamOS programs and utilites to PATH in the ~/.bashrc file now..." ; tput sgr0
 
 echo
 
-echo -e "Note: Script assumes program executables are stored in their respective folders in the \"/damos-programs\" directory."
+# echo -e "Note: Script assumes program executables are stored in their respective folders in the \"/damos-programs\" directory."
 
-echo
+# echo
 
 echo -e "\n" >> ~/.bashrc
 

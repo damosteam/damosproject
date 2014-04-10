@@ -9,7 +9,7 @@ txtred='\e[0;31m' # Red
 
 OS_NAME='DamOS'
 
-echo -e "${txtred}Building custom utilities/programs for ${OS_NAME}..." ; tput sgr0
+echo -e "${txtred}Building custom utilities/programs for ${OS_NAME} now..." ; tput sgr0
 
 echo
 
@@ -25,8 +25,10 @@ sudo apt-get install g++
 ## G++ package for ARM with hard float
 # sudo apt-get install gcc-arm-linux-gnueabihf
 
+cd /damos-programs
+
 echo 'Extracting source code from archive...'
-./extract.sh
+./extract-archive.sh
 echo 'Done extracting source code.'
 
 echo 'Building Cipher program now...'

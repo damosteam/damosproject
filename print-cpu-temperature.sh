@@ -29,7 +29,7 @@ acpi -t
 
 echo 
 
-## oDroid specific CPU frequency and temperature readout below.
+## oDroid specific CPU frequency and temperature readout below...
 # watch "echo -n 'Hostname: ' && hostname && echo -n 'CPU Frequency: ' \
 # && echo $((`sudo cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq` /1000))'Mhz' \
 # && echo -n 'TEMP: ' && sudo cat /sys/devices/platform/tmu/temperature"

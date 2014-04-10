@@ -9,11 +9,13 @@ txtred='\e[0;31m' # Red
 
 OS_NAME='DamOS'
 
-echo -e "${txtred}Building custom utilities/programs for ${OS_NAME}..." ; tput sgr0
+echo -e "${txtred}Building custom utilities/programs for ${OS_NAME} now..." ; tput sgr0
 
 echo
 
 startTime=$(date +"%T")
+
+cd /damos-programs
 
 echo 'Building Cipher program now...'
 cd ./Cipher
@@ -39,12 +41,12 @@ make
 echo 'Done building Client program.'
 cd ..
 
-echo 'Building Keylogger program now...'
+echo 'Building Key Logger program now...'
 cd ./KeystrokeLogging/LinuxLogging/KeyLogger
 echo $(pwd)
 make clean
 make
-echo 'Done building Keylogger program.'
+echo 'Done building Key Logger program.'
 cd .. ; cd .. ; cd ..
 
 echo 'Building Log Processor utility now...'
