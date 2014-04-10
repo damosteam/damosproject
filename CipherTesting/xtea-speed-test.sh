@@ -16,6 +16,8 @@ txtwht='\e[0;37m' # White
 
 echo "Copying test files to current directory..."
 
+cp /damos-programs/Cipher/loe ./loe
+
 cp ./"Project Gutenberg eBooks"/"A Tale of Two Cities.txt" .
 cp ./"Project Gutenberg eBooks"/"Complete Works of William Shakespeare.txt" .
 cp ./"Project Gutenberg eBooks"/"Essays of Montaigne.txt" .
@@ -158,5 +160,7 @@ rm -f ./"The Illiad.txt"
 rm -f ./"The Odyssey.txt" 
 rm -f ./"The Republic.txt" 
 rm -f ./"Treasure Island.txt" 
+
+rm -f ./loe
 
 exit 0

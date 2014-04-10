@@ -41,6 +41,8 @@ echo
 # Copy DamOS executables to working directory for testing.
 echo 'Copying DamOS executables to working directory for testing...'
 
+cd /damos-programs/Valgrind
+
 cp ../Cipher/loe ./loe
 cp ../Client/client ./client
 cp ../Server/server ./server

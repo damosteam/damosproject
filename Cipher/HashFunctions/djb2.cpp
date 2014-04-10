@@ -4,18 +4,33 @@
 
 #include "djb2.h"
 
-unsigned long mDjb2HashKey = 5381;
+string djb2Hash(string data)
+{
+	const unsigned char* formattedData = reinterpret_cast<const unsigned char*>(data.c_str());
 
-unsigned long djb2Hash(unsigned char *data)
+	unsigned long djb2Hash = formattedDjb2Hash(formattedData);
+
+	std::string hashedData;
+	std::stringstream sstream;
+	
+	sstream << djb2Hash;
+	sstream >> hashedData;
+
+	return hashedData;
+}
+
+
+unsigned long formattedDjb2Hash(const unsigned char *data)
 {
 	int index;
+	unsigned long djb2Hash = 5381;
 
 	while((index = *data++))
 	{
-		mDjb2HashKey = ((mDjb2HashKey << 5) + mDjb2HashKey) + index; 
+		djb2Hash = ((djb2Hash << 5) + djb2Hash) + index; 
 	}
 
-	return mDjb2HashKey;
+	return djb2Hash;
 }
 
 #endif

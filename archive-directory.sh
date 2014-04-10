@@ -2,7 +2,7 @@
 
 # Author: Daniel Puckowski
 # Purpose: This is a simple script to archive and compress the contents of a directory.
-
+ 
 ## Color map for script text.
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red

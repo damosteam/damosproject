@@ -16,8 +16,12 @@
 #include "linkedList.h"
 #include "encryption.h"
 #include "decryption.h"
+
 #include "HashFunctions/djb2.h"
 #include "HashFunctions/sdbm.h"
+#include "HashFunctions/adler32.h"
+#include "HashFunctions/lookup3.h"
+
 #include "CipherFunctions/xor.h"
 #include "CipherFunctions/tea.h"
 #include "CipherFunctions/xtea.h"

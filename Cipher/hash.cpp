@@ -4,6 +4,8 @@
 
 #include "hash.h"
 
+using namespace std;
+
 string mHashType = DEFAULT_HASH_TYPE;
 
 string getHashType()
@@ -49,6 +51,31 @@ bool isValidHashType(string hashType)
 	}
 
 	return false;
+}
+
+
+string hashString(string data, int hashTableSize)
+{
+	string hashedData = "";
+
+	if(mHashType == VALID_HASH_TYPES[0])
+	{
+		hashedData = djb2Hash(data);
+	}
+	else if(mHashType == VALID_HASH_TYPES[1])
+	{
+		hashedData = sdbmHash(data);
+	}
+	else if(mHashType == VALID_HASH_TYPES[2])
+	{
+		//hashedData = adler32Hash(data);
+	}
+	else if(mHashType == VALID_HASH_TYPES[3])
+	{
+		//hashedData = lookup3Hash(data);
+	}
+
+	return hashedData;
 }
 
 #endif

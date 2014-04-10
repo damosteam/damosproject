@@ -4,8 +4,8 @@
 
 #include "../header.h"
 
-extern unsigned long mDjb2HashKey; 
+string djb2Hash(string data);
 
-unsigned long djb2Hash(unsigned char *data);
+unsigned long formattedDjb2Hash(const unsigned char *data);
 
 #endif
