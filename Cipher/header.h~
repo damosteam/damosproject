@@ -9,24 +9,24 @@
 #include <iostream>
 #include <sys/types.h>
 
-#include "xor.h"
-#include "tea.h"
-#include "xtea.h"
 #include "file.h"
-#include "xxtea.h"
 #include "cipher.h"
 #include "dirent.h"
 #include "terminal.h"
 #include "linkedList.h"
 #include "encryption.h"
 #include "decryption.h"
+#include "CipherFunctions/xor.h"
+#include "CipherFunctions/tea.h"
+#include "CipherFunctions/xtea.h"
+#include "CipherFunctions/xxtea.h"
 
 using namespace std;
 
 const string PROJECT_NAME    = "Low Overhead Encryption (LOE)";
 const string PROJECT_AUTHOR  = "Daniel Puckowski";
-const string PROGRAM_VERSION = "0.0.3.5";
-const string LAST_UPDATE     = "04/04/2014";
+const string PROGRAM_VERSION = "0.0.3.6";
+const string LAST_UPDATE     = "04/13/2014";
 
 const string RESET_ENCRYPTION_KEY_CODE     = "\\new";
 const string CONFIGURATION_ENCRYPTION_KEY  = "local";

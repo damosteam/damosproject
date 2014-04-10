@@ -4,6 +4,8 @@
 
 #include "header.h"
 
+using namespace std;
+
 const string DEFAULT_CIPHER_TYPE = "xor";
 
 const string VALID_CIPHER_TYPES[] = 

@@ -2,8 +2,8 @@ CC = g++
 CFLAGS = -Wall -g -Os
 LDFLAGS = -lm
 
-loe: linkedList.o command.o terminal.o file.o cipher.o encryption.o decryption.o xor.o tea.o xtea.o xxtea.o functions.o main.o
-	${CC} ${CFLAGS} linkedList.o command.o terminal.o file.o cipher.o encryption.o decryption.o xor.o tea.o xtea.o xxtea.o functions.o main.o ${LDFLAGS} -o loe
+loe: linkedList.o command.o terminal.o file.o cipher.o encryption.o decryption.o xor.o tea.o xtea.o xxtea.o hash.o djb2.o sdbm.o functions.o main.o
+	${CC} ${CFLAGS} linkedList.o command.o terminal.o file.o cipher.o encryption.o decryption.o xor.o tea.o xtea.o xxtea.o hash.o djb2.o sdbm.o functions.o main.o ${LDFLAGS} -o loe
 
 main.o: header.h 
 	${CC} ${CFLAGS} -c main.cpp
@@ -29,17 +29,26 @@ encryption.o: encryption.h
 decryption.o: decryption.h
 	${CC} ${CFLAGS} -c decryption.cpp
 
-xor.o: xor.h
-	${CC} ${CFLAGS} -c xor.cpp
+xor.o: ./CipherFunctions/xor.h
+	${CC} ${CFLAGS} -c ./CipherFunctions/xor.cpp
 
-tea.o: tea.h
-	${CC} ${CFLAGS} -c tea.cpp
+tea.o: ./CipherFunctions/tea.h
+	${CC} ${CFLAGS} -c ./CipherFunctions/tea.cpp
 
-xtea.o: xtea.h
-	${CC} ${CFLAGS} -c xtea.cpp
+xtea.o: ./CipherFunctions/xtea.h
+	${CC} ${CFLAGS} -c ./CipherFunctions/xtea.cpp
 
-xxtea.o: xxtea.h
-	${CC} ${CFLAGS} -c xxtea.cpp
+xxtea.o: ./CipherFunctions/xxtea.h
+	${CC} ${CFLAGS} -c ./CipherFunctions/xxtea.cpp
+
+hash.o: hash.h
+	${CC} ${CFLAGS} -c hash.cpp
+
+djb2.o: ./HashFunctions/djb2.h
+	${CC} ${CFLAGS} -c ./HashFunctions/djb2.cpp
+
+sdbm.o: ./HashFunctions/sdbm.h
+	${CC} ${CFLAGS} -c ./HashFunctions/sdbm.cpp
 
 functions.o: header.h terminal.cpp linkedList.cpp
 	${CC} ${CFLAGS} -c functions.cpp

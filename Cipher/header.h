@@ -9,17 +9,19 @@
 #include <iostream>
 #include <sys/types.h>
 
-#include "xor.h"
-#include "tea.h"
-#include "xtea.h"
 #include "file.h"
-#include "xxtea.h"
 #include "cipher.h"
 #include "dirent.h"
 #include "terminal.h"
 #include "linkedList.h"
 #include "encryption.h"
 #include "decryption.h"
+#include "HashFunctions/djb2.h"
+#include "HashFunctions/sdbm.h"
+#include "CipherFunctions/xor.h"
+#include "CipherFunctions/tea.h"
+#include "CipherFunctions/xtea.h"
+#include "CipherFunctions/xxtea.h"
 
 using namespace std;
 
