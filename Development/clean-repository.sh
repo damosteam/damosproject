@@ -86,6 +86,14 @@ cd Valgrind
 sudo rm -f *~ .*~
 cd ..
 
+cd Development
+sudo rm -f *~ .*~
+cd ..
+
+cd System
+sudo rm -f *~ .*~
+cd ..
+
 echo -e "${txtred}Done cleaning repository." ; tput sgr0
 
 exit 0
