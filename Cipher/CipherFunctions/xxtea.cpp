@@ -54,7 +54,7 @@ void xxteaEncrypt(char* data, int dataLength, bool encrypt)
   *     -> if n is zero result is 1 and no coding or decoding takes place, otherwise the result is zero
   *     -> assumes 32 bit 'long' and same endian coding and decoding
   */
-void xxteaEncryptBlock(uint32_t v[2], unsigned int numberOfWords, uint32_t const key[4])
+void xxteaEncryptBlock(uint32_t v[2], int numberOfWords, uint32_t const key[4])
 {
 	uint32_t y, z, sum;
     	unsigned p, rounds, e;
@@ -80,7 +80,7 @@ void xxteaEncryptBlock(uint32_t v[2], unsigned int numberOfWords, uint32_t const
         		z = v[(numberOfWords - 1)] += MX;
       		} while(--rounds);
 	} 
-	else if(numberOfWords < ((uint32_t) -1)) 
+	else if(numberOfWords < -1) 
 	{  
       		numberOfWords = -numberOfWords;
       		rounds = 6 + (52 / numberOfWords);
@@ -114,7 +114,7 @@ void xxteaEncryptBlock(uint32_t v[2], unsigned int numberOfWords, uint32_t const
   *     -> if n is zero result is 1 and no coding or decoding takes place, otherwise the result is zero
   *     -> assumes 32 bit 'long' and same endian coding and decoding
   */
-void xxteaDecryptBlock(uint32_t v[2], unsigned int numberOfWords, uint32_t const key[4])
+void xxteaDecryptBlock(uint32_t v[2], int numberOfWords, uint32_t const key[4])
 {
 	uint32_t y, z, sum;
     	unsigned p, rounds, e;
@@ -140,7 +140,7 @@ void xxteaDecryptBlock(uint32_t v[2], unsigned int numberOfWords, uint32_t const
         		z = v[(numberOfWords - 1)] += MX;
       		} while(--rounds);
 	} 
-	else if(numberOfWords < ((uint32_t) -1)) 
+	else if(numberOfWords < -1) 
 	{  
       		numberOfWords = -numberOfWords;
       		rounds = 6 + (52 / numberOfWords);
