@@ -13,8 +13,11 @@ txtpur='\e[0;35m' # Purple
 txtcyn='\e[0;36m' # Cyan
 txtwht='\e[0;37m' # White
 
-echo -e "${txtred}Testing the four cipher methods of the custom DamOS Cipher program..." ; tput sgr0
+echo -e "${txtred}Testing the four cipher methods of the custom DamOS Cipher program now..." ; tput sgr0
 echo
+
+cd /damos-programs/Cipher/Scripts
+cp /damos-programs/Cipher/loe ./loe
 
 echo -e "${txtylw}Testing xor cipher..." ; tput sgr0
 echo -e "Input: \"Hello world!\""
@@ -118,5 +121,7 @@ echo
 
 echo -e "${txtred}Finished all testing." ; tput sgr0
 echo
+
+rm -f ./loe
 
 exit 0

@@ -1,0 +1,6 @@
+.
+..
+loe
+key.txt
+blacklist.txt
+extensions.txt

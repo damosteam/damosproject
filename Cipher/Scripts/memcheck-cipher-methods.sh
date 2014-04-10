@@ -16,7 +16,10 @@ txtwht='\e[0;37m' # White
 # Bold escape sequence. (For reference here)
 # echo -e "\033[1mBold.\033[0m"
 
-echo -e "${txtred}Memory leak test for the cipher methods of the custom DamOS cipher program." ; tput sgr0
+echo -e "${txtred}Memory leak test for the cipher methods of the custom DamOS Cipher program." ; tput sgr0
+
+cd /damos-programs/Cipher/Scripts
+cp /damos-programs/Cipher/loe ./loe
 
 echo
 
@@ -97,5 +100,7 @@ fi
 echo
 
 echo -e "${txtred}Test complete." ; tput sgr0
+
+rm -f ./loe
 
 exit 0
