@@ -9,12 +9,10 @@ txtred='\e[0;31m' # Red
 
 echo -e "${txtred}Pushing repository to GitHub now..." ; tput sgr0
 
-sudo git add .
+sudo git add --ignore-removal .
 
 echo 'Enter a message for the commit: '
 read commitMessage
-
-echo $commitMessage
 
 sudo git commit -m "$commitMessage"
 sudo git push -u origin master
