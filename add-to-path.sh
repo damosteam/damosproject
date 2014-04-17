@@ -15,7 +15,7 @@ echo -e "${txtred}Adding the custom DamOS programs and utilites to PATH in the ~
 
 echo -e "\n" >> ~/.bashrc
 
-echo "export PATH=$PATH:/damos-programs/Cipher/:/damos-programs/Client/:/damos-programs/Server/:/damos-programs/KeystrokeLogging/LinuxLogging/KeyLogger/:/damos-programs/KeystrokeLogging/LinuxLogging/LogProcessor/:/damos-programs/MenuReader/" >> ~/.bashrc
+echo "export PATH=$PATH:/damos-programs/:/damos-programs/Cipher/:/damos-programs/Client/:/damos-programs/Server/:/damos-programs/KeystrokeLogging/LinuxLogging/KeyLogger/:/damos-programs/KeystrokeLogging/LinuxLogging/LogProcessor/:/damos-programs/MenuReader/" >> ~/.bashrc
 
 echo
 
