@@ -34,13 +34,9 @@ cd /damos-programs
 
 ./install-dependencies.sh
 
-./initial-build.sh
+./Development/initial-build.sh
 
-cd ManPages
-
-./add-manpages.sh
-
-cd ..
+./ManPages/add-manpages.sh
 
 ./add-to-path.sh
 
