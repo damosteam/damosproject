@@ -9,7 +9,7 @@ txtred='\e[0;31m' # Red
 
 echo -e "${txtred}Pushing repository to GitHub now..." ; tput sgr0
 
-sudo git add --all .
+sudo git add --all ..
 
 echo 'Enter a message for the commit: '
 read commitMessage
