@@ -2,7 +2,7 @@
 
 # Author: Daniel Puckowski
 # Purpose: This script will extract and decompress files stored in an archive named "archive.tar.gz".
-
+ 
 ## Color map for script text.
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red

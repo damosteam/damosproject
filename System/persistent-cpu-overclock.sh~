@@ -1,5 +1,5 @@
 #!/bin/bash
- 
+
 # Author: Daniel Puckowski
 # Date (last edit): 04/04/2014
 # Purpose: Overclock the Exynos 4412 Prime SoC in the oDroid U3 from 1.7 GHz to

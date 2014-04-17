@@ -2,7 +2,7 @@
 
 # Author: Daniel Puckowski
 # Purpose: Add the custom DamOS programs and utilities to PATH in the ~/.bashrc file.
-
+ 
 ## Color map for script text.
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red

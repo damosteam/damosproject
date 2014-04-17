@@ -10,7 +10,7 @@ txtred='\e[0;31m' # Red
 echo 'Installing all dependencies for the custom DamOS programs and utilites now...'
 
 echo
-
+ 
 echo -e "${txtred}Note: This script will try to install dependencies for several different
 system architectures at once. Expect to see some failure-to-install messages." ; tput sgr0
 

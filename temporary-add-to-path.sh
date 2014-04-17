@@ -22,5 +22,5 @@ echo
 export PATH=$PATH:/damos-programs/Cipher/:/damos-programs/Client/:/damos-programs/Server/:/damos-programs/KeystrokeLogging/LinuxLogging/KeyLogger/:/damos-programs/KeystrokeLogging/LinuxLogging/LogProcessor/:/damos-programs/MenuReader/
 
 echo -e "${txtred}Added to path." ; tput sgr0
-
+      
 exit 0

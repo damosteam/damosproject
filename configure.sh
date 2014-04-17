@@ -6,7 +6,7 @@
 ## Color map for script text.
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red
-
+ 
 startTime=$(date +"%T")
 
 echo -e "${txtred}Configuring the custom DamOS programs and utilities now..." ; tput sgr0
