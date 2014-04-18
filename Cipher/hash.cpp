@@ -64,12 +64,15 @@ string hashString(string data, int hashTableSize)
 	}
 	else if(mHashType == VALID_HASH_TYPES[1])
 	{
+		hashedData = sdbmHash(data);
 	}
 	else if(mHashType == VALID_HASH_TYPES[2])
 	{
+		//hashedData = adler32Hash(data);
 	}
 	else if(mHashType == VALID_HASH_TYPES[3])
 	{
+		//hashedData = lookup3Hash(data);
 	}
 
 	return hashedData;

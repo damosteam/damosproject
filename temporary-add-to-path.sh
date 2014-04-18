@@ -23,4 +23,4 @@ export PATH=$PATH:/damos-programs/Cipher/:/damos-programs/Client/:/damos-program
 
 echo -e "${txtred}Added to path." ; tput sgr0
       
-exit 0
+# exit 0
