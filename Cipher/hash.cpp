@@ -4,6 +4,8 @@
 
 #include "hash.h"
 
+using namespace std;
+
 string mHashType = DEFAULT_HASH_TYPE;
 
 string getHashType()
@@ -49,6 +51,42 @@ bool isValidHashType(string hashType)
 	}
 
 	return false;
+}
+
+
+void hashString(char* data, unsigned int hashTableSize)
+{
+	string hashedData = "";
+
+	if(mHashType == "djb2")
+	{
+		//unsigned long hash = djb2Hash(data);
+
+		//hashedData = ;
+	}
+	else if(mHashType == "sdbm")
+	{
+		//unsigned long hash = sbdmHash(data);
+
+		//hashedData = ;
+	}
+	else if(mHashType == "adler32")
+	{
+		//uint32_t hash = adler32Hash(data, strlen(data));
+
+		//hashedData = ; 
+	}
+	else if(mHashType == "lookup3")
+	{
+		unsigned int hashAddress;
+		unsigned int initialValue;
+
+		initialValue = 12321;
+
+		//hashAddress = lookup3Hash(data, strlen(data), initialValue);	
+		
+		//return (hashAddress % hashTableSize);
+	}
 }
 
 #endif

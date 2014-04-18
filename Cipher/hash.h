@@ -23,6 +23,7 @@ string getHashType();
 
 void listValidHashTypes();
 void setHashType(string hashType);
+void hashString(char* data, unsigned int hashTableSize);
 
 bool isValidHashType(string hashType);
 
