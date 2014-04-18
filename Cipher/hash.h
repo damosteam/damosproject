@@ -20,10 +20,10 @@ const int VALID_HASH_TYPES_COUNT = 5;
 extern string mHashType;
 
 string getHashType();
+string hashString(string data, int hashTableSize);
 
 void listValidHashTypes();
 void setHashType(string hashType);
-void hashString(char* data, unsigned int hashTableSize);
 
 bool isValidHashType(string hashType);
 

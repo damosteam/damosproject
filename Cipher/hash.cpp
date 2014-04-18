@@ -54,39 +54,25 @@ bool isValidHashType(string hashType)
 }
 
 
-void hashString(char* data, unsigned int hashTableSize)
+string hashString(string data, int hashTableSize)
 {
 	string hashedData = "";
 
-	if(mHashType == "djb2")
+	if(mHashType == VALID_HASH_TYPES[0])
 	{
-		//unsigned long hash = djb2Hash(data);
-
-		//hashedData = ;
+		hashedData = djb2Hash(data);
 	}
-	else if(mHashType == "sdbm")
+	else if(mHashType == VALID_HASH_TYPES[1])
 	{
-		//unsigned long hash = sbdmHash(data);
-
-		//hashedData = ;
 	}
-	else if(mHashType == "adler32")
+	else if(mHashType == VALID_HASH_TYPES[2])
 	{
-		//uint32_t hash = adler32Hash(data, strlen(data));
-
-		//hashedData = ; 
 	}
-	else if(mHashType == "lookup3")
+	else if(mHashType == VALID_HASH_TYPES[3])
 	{
-		unsigned int hashAddress;
-		unsigned int initialValue;
-
-		initialValue = 12321;
-
-		//hashAddress = lookup3Hash(data, strlen(data), initialValue);	
-		
-		//return (hashAddress % hashTableSize);
 	}
+
+	return hashedData;
 }
 
 #endif
